@@ -41,11 +41,24 @@ This is git assignment 1 by Naimul Ferdous
 - `git diff <branch1> <branch2>`: Show the differences between two branches.
 
 ## Undoing Changes
-
 - `git reset <file>`: Unstage the specified file.
 - `git reset --hard`: Discard all changes in the working directory and staging area.
 - `git revert <commit-hash>`: Create a new commit that undoes the changes introduced by the specified commit.
 - `git checkout -- <file>`: Discard changes in the working directory for the specified file.
+
+## Rebasing and Resetting
+- `git rebase <branch>`: Move the current branch's commits to the tip of the specified branch.
+- `git reset <commit-hash>`: Move the current branch's tip to the specified commit, discarding changes.
+- `git reflog`: Show the history of all your repository's previous states.
+- `git cherry-pick <commit-hash>`: Apply the changes introduced by a specific commit to the current branch.
+
+## Stashing
+- `git stash`: Save the current state of the working directory and the index, to be restored later.
+- `git stash list`: List the current stashes.
+- `git stash apply`: Restore the most recent stash.
+- `git stash pop`: Restore the most recent stash and remove it from the stash list.
+- `git stash drop`: Remove the most recent stash.
+This covers t
 
 ## Remote Repositories
 
