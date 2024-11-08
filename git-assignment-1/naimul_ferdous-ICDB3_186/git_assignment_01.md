@@ -24,6 +24,9 @@ This is git assignment 1 by Naimul Ferdous
 ## Branching and Merging
 
 - `git branch`: List all local branches.
+
+    ![BranchList](SS/BranchList.png)
+
 - `git branch <branch-name>`: Create a new branch with the specified name.
 - `git checkout <branch-name>`: Switch to the specified branch.
 - `git merge <branch-name>`: Merge the specified branch into the current branch.
