@@ -1,6 +1,6 @@
 # Git Assignment 1
 
-This is git assignment 1
+This is git assignment 1 by Naimul Ferdous
 
 ## Basic Commands
 
@@ -9,10 +9,16 @@ This is git assignment 1
 - `git add <file>`: Stage changes in the specified file for the next commit.
 - `git add .`: Stage all changes in the current directory for the next commit.
 
-![Add](SS/Add.png)
+    ![Add](SS/Add.png)
 
 - `git commit -m "commit message"`: Create a new commit with the staged changes and the provided commit message.
+
+    ![Add](SS/Commit.png)
+
 - `git push`: Upload the local repository changes to the remote repository.
+
+    ![Add](SS/Push.png)
+
 - `git pull`: Download the latest changes from the remote repository and merge them into the local repository.
 
 ## Branching and Merging
@@ -28,6 +34,9 @@ This is git assignment 1
 
 - `git status`: Show the current status of the repository, including unstaged and untracked files.
 - `git log`: Show the commit history of the current branch.
+
+    [Add](SS/Log.png)
+
 - `git diff`: Show the differences between the working directory and the staging area.
 - `git diff <branch1> <branch2>`: Show the differences between two branches.
 
