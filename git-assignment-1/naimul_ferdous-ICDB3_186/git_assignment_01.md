@@ -1,6 +1,6 @@
-# Git Commands Cheatsheet
+# Git Assignment 1
 
-Git is a powerful version control system that allows you to track changes to your codebase, collaborate with others, and manage your project's history. Here are some of the most commonly used Git commands:
+This is git assignment 1
 
 ## Basic Commands
 
