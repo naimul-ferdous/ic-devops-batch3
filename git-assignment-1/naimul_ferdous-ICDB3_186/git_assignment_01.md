@@ -13,11 +13,11 @@ This is git assignment 1 by Naimul Ferdous
 
 - `git commit -m "commit message"`: Create a new commit with the staged changes and the provided commit message.
 
-    ![Add](SS/Commit.png)
+    ![Commit](SS/Commit.png)
 
 - `git push`: Upload the local repository changes to the remote repository.
 
-    ![Add](SS/Push.png)
+    ![Push](SS/Push.png)
 
 - `git pull`: Download the latest changes from the remote repository and merge them into the local repository.
 
@@ -35,7 +35,7 @@ This is git assignment 1 by Naimul Ferdous
 - `git status`: Show the current status of the repository, including unstaged and untracked files.
 - `git log`: Show the commit history of the current branch.
 
-    [Add](SS/Log.png)
+    [Log](SS/Log.png)
 
 - `git diff`: Show the differences between the working directory and the staging area.
 - `git diff <branch1> <branch2>`: Show the differences between two branches.
