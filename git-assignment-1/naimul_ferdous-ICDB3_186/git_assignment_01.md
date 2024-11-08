@@ -29,6 +29,9 @@ This is git assignment 1 by Naimul Ferdous
 
 - `git branch <branch-name>`: Create a new branch with the specified name.
 - `git checkout <branch-name>`: Switch to the specified branch.
+
+    ![BranchCheckout](SS/BranchCheckout.png)
+
 - `git merge <branch-name>`: Merge the specified branch into the current branch.
 - `git branch -d <branch-name>`: Delete the specified local branch.
 - `git push origin :<branch-name>`: Delete the specified remote branch.
