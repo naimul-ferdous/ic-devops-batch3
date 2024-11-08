@@ -35,7 +35,7 @@ This is git assignment 1 by Naimul Ferdous
 - `git status`: Show the current status of the repository, including unstaged and untracked files.
 - `git log`: Show the commit history of the current branch.
 
-    [Log](SS/Log.png)
+    ![Log](SS/Log.png)
 
 - `git diff`: Show the differences between the working directory and the staging area.
 - `git diff <branch1> <branch2>`: Show the differences between two branches.
@@ -51,6 +51,9 @@ This is git assignment 1 by Naimul Ferdous
 
 - `git remote add origin <repository-url>`: Add a new remote repository with the name "origin".
 - `git remote -v`: Show the configured remote repositories.
+
+    ![Remote](SS/Remote.png)
+
 - `git push -u origin <branch-name>`: Push the specified branch to the remote repository and set it as the upstream branch.
 - `git fetch`: Download objects and refs from the remote repository without merging them into the local repository.
 - `git remote prune origin`: Remove references to remote branches that no longer exist.
