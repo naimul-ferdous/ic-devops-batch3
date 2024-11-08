@@ -8,7 +8,7 @@ This is git assignment 1
 - `git clone <repository-url>`: Clone an existing Git repository from a remote URL.
 - `git add <file>`: Stage changes in the specified file for the next commit.
 - `git add .`: Stage all changes in the current directory for the next commit.
-        ![Add](git-assignment-1\naimul_ferdous-ICDB3_186\SS\Add.png)
+![Add](git-assignment-1/naimul_ferdous-ICDB3_186/SS/Add.png)
 - `git commit -m "commit message"`: Create a new commit with the staged changes and the provided commit message.
 - `git push`: Upload the local repository changes to the remote repository.
 - `git pull`: Download the latest changes from the remote repository and merge them into the local repository.
