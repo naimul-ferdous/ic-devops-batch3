@@ -112,6 +112,10 @@ git reset --mixed HEAD~1
 # Unstage specific file
 git reset HEAD file.txt
 ```
+
+![Reset](SS/Reset.png)
+
+
 - Moves HEAD and unstages changes
 - Files remain modified in working directory
 - Use case: Reorganizing changes into different commits
