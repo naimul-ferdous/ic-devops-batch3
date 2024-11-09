@@ -54,6 +54,9 @@ This is git assignment 1 by Naimul Ferdous
 
 ## Rebasing and Resetting
 - `git rebase <branch>`: Move the current branch's commits to the tip of the specified branch.
+
+    ![BranchRebasing](SS/BranchRebasing.png)
+
 - `git rebase -i <commit-hash>`: Start an interactive rebase session starting from the specified commit.
 - `git reset <commit-hash>`: Move the current branch's tip to the specified commit, discarding changes.
 - `git reflog`: Show the history of all your repository's previous states.
