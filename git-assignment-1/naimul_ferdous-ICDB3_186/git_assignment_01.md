@@ -84,6 +84,16 @@ During interactive rebase, you can use these commands:
 - `fixup` - Like squash, but discard message
 - `drop` - Remove commit
 
+
+![Interactive rebasing 1](SS/Interactive%20rebasing%201.png)
+
+![Interactive rebasing 2](SS/Interactive%20rebasing%202.png)
+
+![Interactive rebasing 3](SS/Interactive%20rebasing%203.png)
+
+![Interactive rebasing 4](SS/Interactive%20rebasing%204.png)
+
+
 ### Example Rebase Scenarios
 
 1. Squashing commits:
