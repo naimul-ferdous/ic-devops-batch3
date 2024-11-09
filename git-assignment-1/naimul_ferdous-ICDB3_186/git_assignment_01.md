@@ -73,6 +73,8 @@ This is git assignment 1 by Naimul Ferdous
 - `git stash drop`: Remove the most recent stash.
 This covers t
 
+    ![GitStash](SS/GitStash.png)
+
 ## Remote Repositories
 
 - `git remote add origin <repository-url>`: Add a new remote repository with the name "origin".
