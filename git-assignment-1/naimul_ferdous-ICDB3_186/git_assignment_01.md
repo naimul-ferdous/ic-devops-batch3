@@ -53,6 +53,9 @@ git reset --hard origin/main
 # Reset to specific commit
 git reset --hard commit_hash
 ```
+
+![HardResetShow](SS/HardResetShow.png)
+
 - ⚠️ WARNING: Permanently removes changes
 - Moves HEAD and discards all changes
 - Use case: Abandoning work and starting fresh
