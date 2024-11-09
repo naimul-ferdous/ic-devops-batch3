@@ -78,4 +78,126 @@ This covers t
 - `git fetch`: Download objects and refs from the remote repository without merging them into the local repository.
 - `git remote prune origin`: Remove references to remote branches that no longer exist.
 
-Remember, these are just the most common Git commands. Git has many more features and commands that you can explore as you become more familiar with the tool.
+# Git Reset and Interactive Rebase
+
+## Git Reset Commands
+
+### Soft Reset
+```bash
+# Undo last commit but keep changes staged
+git reset --soft HEAD~1
+
+# Undo multiple commits
+git reset --soft HEAD~n  # where n is number of commits
+```
+- Moves HEAD to previous commit
+- Keeps all changes staged
+- Use case: Redoing commits or combining multiple commits
+
+### Mixed Reset (Default)
+```bash
+# Undo last commit and unstage changes
+git reset HEAD~1
+# or
+git reset --mixed HEAD~1
+
+# Unstage specific file
+git reset HEAD file.txt
+```
+- Moves HEAD and unstages changes
+- Files remain modified in working directory
+- Use case: Reorganizing changes into different commits
+
+### Hard Reset
+```bash
+# Completely discard commits and changes
+git reset --hard HEAD~1
+
+# Reset to remote branch
+git reset --hard origin/main
+
+# Reset to specific commit
+git reset --hard commit_hash
+```
+- ⚠️ WARNING: Permanently removes changes
+- Moves HEAD and discards all changes
+- Use case: Abandoning work and starting fresh
+
+## Git Interactive Rebase
+
+### Basic Interactive Rebase
+```bash
+# Start interactive rebase for last n commits
+git rebase -i HEAD~n
+
+# Rebase onto specific branch
+git rebase -i main
+
+# Rebase onto specific commit
+git rebase -i commit_hash
+```
+
+### Common Rebase Commands
+During interactive rebase, you can use these commands:
+
+- `pick` - Keep commit as is
+- `reword` - Change commit message
+- `edit` - Stop for amending
+- `squash` - Melt into previous commit
+- `fixup` - Like squash, but discard message
+- `drop` - Remove commit
+
+### Example Rebase Scenarios
+
+1. Squashing commits:
+```bash
+# Squash last 3 commits
+git rebase -i HEAD~3
+# Then change 'pick' to 'squash' or 's' for commits to combine
+```
+
+2. Editing commit message:
+```bash
+# Change last commit message
+git rebase -i HEAD~1
+# Then change 'pick' to 'reword' or 'r'
+```
+
+3. Reordering commits:
+```bash
+# Select range of commits to reorder
+git rebase -i HEAD~3
+# Then reorder the lines in editor
+```
+
+## Best Practices
+
+1. Before Reset/Rebase:
+   - Create backup branch: `git branch backup-branch`
+   - Only modify unpublished commits
+   - Check current status: `git status`
+
+2. Recovery Options:
+   - View reset history: `git reflog`
+   - Restore to previous state: `git reset --hard HEAD@{n}`
+
+3. When to Use What:
+   - Use `--soft` when keeping changes is important
+   - Use `--mixed` for reorganizing changes
+   - Use `--hard` only when sure about discarding changes
+   - Use `rebase -i` for cleaning history before sharing
+
+## Common Pitfalls to Avoid
+
+1. Never reset/rebase public branches
+2. Don't reset/rebase without a backup
+3. Be careful with `--hard` reset
+4. Always check branch status before operations
+
+## Tips
+
+1. Use `git log` to verify commit history
+2. Use `git status` frequently during operations
+3. Keep commits atomic and focused
+4. Write clear commit messages
+5. Create backup branches for safety
