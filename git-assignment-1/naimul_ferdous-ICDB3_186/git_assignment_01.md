@@ -49,6 +49,9 @@ This is git assignment 1 by Naimul Ferdous
 ## Undoing Changes
 - `git reset <file>`: Unstage the specified file.
 - `git reset --hard`: Discard all changes in the working directory and staging area.
+
+    ![HardReset](SS/HardReset.png)
+
 - `git revert <commit-hash>`: Create a new commit that undoes the changes introduced by the specified commit.
 - `git checkout -- <file>`: Discard changes in the working directory for the specified file.
 
