@@ -14,6 +14,12 @@ git reset --soft HEAD~1
 # Undo multiple commits
 git reset --soft HEAD~n  # where n is number of commits
 ```
+
+![SoftReset1](SS/SoftReset1.png)
+
+![SoftReset2](SS/SoftReset2.png)
+
+
 - Moves HEAD to previous commit
 - Keeps all changes staged
 - Use case: Redoing commits or combining multiple commits
