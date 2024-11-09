@@ -118,6 +118,10 @@ git rebase -i HEAD~3
    - View reset history: `git reflog`
    - Restore to previous state: `git reset --hard HEAD@{n}`
 
+   ![](SS/reflog.png)
+
+   ![](SS/reflogShow.png)
+
 3. When to Use What:
    - Use `--soft` when keeping changes is important
    - Use `--mixed` for reorganizing changes
@@ -200,6 +204,9 @@ git rebase -i HEAD~3
 - `git rebase -i <commit-hash>`: Start an interactive rebase session starting from the specified commit.
 - `git reset <commit-hash>`: Move the current branch's tip to the specified commit, discarding changes.
 - `git reflog`: Show the history of all your repository's previous states.
+
+    ![BranchRebasing](SS/reflog.png)
+
 - `git cherry-pick <commit-hash>`: Apply the changes introduced by a specific commit to the current branch.
 
 ## Stashing
