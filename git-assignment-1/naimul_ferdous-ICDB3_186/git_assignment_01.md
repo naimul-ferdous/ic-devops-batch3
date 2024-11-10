@@ -184,6 +184,9 @@ git rebase -i HEAD~3
     ![BranchCheckout](SS/BranchCheckout.png)
 
 - `git merge <branch-name>`: Merge the specified branch into the current branch.
+
+    ![Merge](SS/Merge.png)
+
 - `git branch -d <branch-name>`: Delete the specified local branch.
 - `git push origin :<branch-name>`: Delete the specified remote branch.
 
