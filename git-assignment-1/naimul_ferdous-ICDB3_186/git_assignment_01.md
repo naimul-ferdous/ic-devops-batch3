@@ -222,6 +222,8 @@ git rebase -i HEAD~3
 
 - `git cherry-pick <commit-hash>`: Apply the changes introduced by a specific commit to the current branch.
 
+    ![CherryPicking](SS/CherryPicking.png)
+
 ## Stashing
 - `git stash`: Save the current state of the working directory and the index, to be restored later.
 - `git stash list`: List the current stashes.
